@@ -1,73 +1,158 @@
-# Welcome to your Lovable project
+# 🔍 Sherlock Nexus - OSINT Username Search Engine
 
-## Project info
+A modern, fast, and accurate OSINT tool that searches for usernames across 50+ platforms instantly. Built with React, TypeScript, and Python Flask.
 
-**URL**: https://lovable.dev/projects/ebd41553-3ff2-44c9-9336-58f075c71032
+## ✨ Features
 
-## How can I edit this code?
+- **Lightning Fast**: Real-time username search across 50+ platforms
+- **OSINT Ready**: Built for cybersecurity professionals and digital investigators  
+- **50+ Platforms**: Comprehensive coverage including GitHub, Twitter, Reddit, Instagram, and more
+- **Accurate Results**: Advanced detection algorithms to minimize false positives
+- **Beautiful UI**: Modern design with typewriter animations and smooth interactions
+- **Responsive**: Works perfectly on desktop and mobile devices
 
-There are several ways of editing your application.
+## 🚀 Quick Start
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ebd41553-3ff2-44c9-9336-58f075c71032) and start prompting.
+- **Node.js** (v16 or higher) - [Download here](https://nodejs.org/)
+- **Python 3.x** - [Download here](https://python.org/)
+- **Git** - [Download here](https://git-scm.com/)
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation & Setup
 
-**Use your preferred IDE**
+**Step 1: Clone the repository**
+```bash
+git clone https://github.com/Ganesh5050/Sherlock.git
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Step 2: Navigate to the project directory**
+```bash
+cd Sherlock
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Step 3: Install frontend dependencies**
+```bash
+npm install
+```
 
-Follow these steps:
+**Step 4: Install backend dependencies**
+```bash
+cd OSINT_Project-main
+pip install Flask requests flask-cors
+cd ..
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🎯 Running the Application
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Option 1: Run Both Services (Recommended)**
 
-# Step 3: Install the necessary dependencies.
-npm i
+**Terminal 1 - Start Backend:**
+```bash
+cd OSINT_Project-main
+python app.py
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+**Terminal 2 - Start Frontend:**
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+**Option 2: Run Services Separately**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+**Backend only:**
+```bash
+cd OSINT_Project-main
+python app.py
+```
+*Backend runs on: http://localhost:5000*
 
-**Use GitHub Codespaces**
+**Frontend only:**
+```bash
+npm run dev
+```
+*Frontend runs on: http://localhost:8080 (or similar port)*
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌐 Access URLs
 
-## What technologies are used for this project?
+- **Frontend Application**: http://localhost:8080
+- **Backend API**: http://localhost:5000
+- **Original OSINT Interface**: http://localhost:5000
 
-This project is built with:
+## 🛠️ Technologies Used
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Frontend
+- **Vite** - Fast build tool and dev server
+- **React 18** - Modern UI library
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful component library
+- **Framer Motion** - Smooth animations
+- **React Router** - Client-side routing
 
-## How can I deploy this project?
+### Backend
+- **Python Flask** - Lightweight web framework
+- **Requests** - HTTP library for API calls
+- **Flask-CORS** - Cross-origin resource sharing
 
-Simply open [Lovable](https://lovable.dev/projects/ebd41553-3ff2-44c9-9336-58f075c71032) and click on Share -> Publish.
+## 👥 Team
 
-## Can I connect a custom domain to my Lovable project?
+- **Ganesh Panigrahi** - Full Stack Lead
+- **Archi Patel** - UI/UX Engineer
+- **Ashish Mishra** - Cyber Expert
+- **Abhishek Pal** - DevOps Engineer
 
-Yes, you can!
+## 📱 Usage
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. **Enter Username**: Type any username in the search box
+2. **Real-time Search**: Watch as the tool checks 50+ platforms
+3. **View Results**: See which platforms have the username
+4. **Visit Profiles**: Click "Visit" to open found profiles
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🔧 Development
+
+### Project Structure
+```
+Sherlock/
+├── src/                    # Frontend React app
+│   ├── components/         # React components
+│   ├── pages/             # Page components
+│   ├── assets/            # Images and static files
+│   └── lib/               # Utilities
+├── OSINT_Project-main/    # Backend Flask app
+│   ├── app.py            # Main Flask application
+│   ├── sites.py          # Platform configurations
+│   └── index.html        # Original OSINT interface
+└── public/               # Static assets
+```
+
+### Available Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Inspired by the original [Sherlock](https://github.com/sherlock-project/sherlock) project
+- Built with modern web technologies for enhanced user experience
+- Designed for OSINT professionals and cybersecurity experts
+
+---
+
+**Made with ❤️ by the Sherlock Nexus Team**
